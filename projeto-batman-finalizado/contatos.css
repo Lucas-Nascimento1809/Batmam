@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Kdam Thmor Pro", sans-serif;
+
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 0.5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+
+}
+
+li:hover {
+    color: #d21617;
+
+}
+
+#logo {
+    width: 130px;
+    height: auto;
+}
+
+h2 {
+    color: #fff;
+    background-color: #00000077;
+}
+
+h2:hover {
+    color: #d21617;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    width: 60%;
+    background-image:url("https://s2-techtudo.glbimg.com/sAde9nifgABCIIld0wUa8af3DqI=/0x0:1366x768/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/P/e/2i7BplSCytEt1giqKdBw/the-batman-elenco.jpeg.webp");
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 100px auto;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    background-color: #00000077;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+button:hover {
+    color: #d21617;
+}
+
+input, textarea {
+    border: 0;
+    outline: none;
+    padding: 5px 5px;
+    margin: 5px auto;
+    border-radius: 10px;
+    color: #ffff;
+    font-size: 18px;
+    width: 100%;
+    background-color: #00000077;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+footer {
+    height: 300px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    .sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 95px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+    }
+
+
+}

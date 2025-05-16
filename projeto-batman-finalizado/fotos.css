@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color : black;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 0.5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+
+}
+
+li:hover {
+    color: #d21617;
+
+}
+
+#logo {
+    width: 130px;
+    height: auto;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    color: #d21617;
+}
+
+.gallery-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.fotos-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.item01 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/pt/thumb/3/38/The_Batman_poster.jpg/250px-The_Batman_poster.jpg");
+}
+
+.item02 {
+    background-image: url("https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/12/27/1754278577-batman-pattinson2.jpg");
+}
+
+.item03 {
+    background-image: url("https://www.opovo.com.br/_midias/jpg/2022/03/02/fjeydekxiacaqad-18221173.jpg");
+}
+.item1 {
+    background-image: url("https://rukminim2.flixcart.com/image/750/900/l3j2cnk0/poster/d/4/m/large-the-batman-2022-poster-18-x-12-inch-300-gsm-m0080-original-imagempped3v29sj.jpeg?q=20&crop=false");
+}
+
+.item2 {
+    background-image: url("https://d1tgyzt3mf06m9.cloudfront.net/v3-staging/2022/03/fakta-unik-di-balik-layar-film-the-batman-dc9a557472-5330-4efc-8800-131f69af5cdc.jpg");
+}
+
+.item3 {
+    background-image: url("https://universoheroico.com.br/wp-content/uploads/2022/03/Mulhe-Gato-e-o-Batman.jpg");
+}
+
+.item4 {
+    background-image: url("https://www.hollywoodreporter.com/wp-content/uploads/2022/03/MCDBATM_WB065-H-2022.jpg");
+}
+
+.item5 {
+    background-image: url("https://img.odcdn.com.br/wp-content/uploads/2022/02/Charada-em-The-Batman.jpg");
+}
+
+.item6 {
+    background-image: url("https://static.dc.com/dc/files/default_images/Penguin_blog_6228fc6f4acf60.60111894.jpg");
+}
+
+.item7 {
+    background-image: url("https://trecobox.com.br/wp-content/uploads/2022/03/Zoe-Kravitz.jpg");
+}
+
+.item8 {
+    background-image: url("https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2022/03/04/james-gordon-0403.jpeg");
+}
+
+.item9 {
+    background-image: url("https://e0.pxfuel.com/wallpapers/537/513/desktop-wallpaper-the-batman-robert-pattinson-2021-movie.jpg");
+}
+
+.foto {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "kdam thmor pro", sans-serif;
+    box-shadow: #860c0c 0px 5px 15px;
+}
+
+.foto:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    .sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 95px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+    }
+
+
+}
